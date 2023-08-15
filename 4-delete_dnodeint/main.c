@@ -24,15 +24,15 @@ int main(void)
 	print_dlistint(head);
 	printf("-----------------\n");
 
-	// Perform some deletions
+	/* Perform some deletions */
 	delete_dnodeint_at_index(&head, 5);
 	delete_dnodeint_at_index(&head, 0);
 	delete_dnodeint_at_index(&head, 0);
 
-	// Print the list after deletions
+	/* Print the list after deletions */
 	print_dlistint(head);
 
-	// Free the list
+	/*  Free the list  */
 	free_dlistint(head);
 
 	return (0);
